@@ -1,0 +1,45 @@
+# ------------------------------------------------------------
+# Project-level settings
+# ------------------------------------------------------------
+[project]
+title      = "F1 Insight Dashboard"
+version    = "0.1.0"
+slug       = "f1-insight-dashboard"
+entrypoint = "hello.py"          # file we’ll run
+
+# Optional branding (shown if you call sidebar())
+[branding]
+name       = "F1 Insight Dashboard"
+logo       = "images/logo.png"   # drop any png you like
+favicon    = "images/favicon.ico"
+primaryColor = "#E10600"         # Ferrari red – tweak as you wish
+
+# ------------------------------------------------------------
+# Data connections – one per CSV
+# ------------------------------------------------------------
+
+[data.races]
+type = "csv"
+path = "data/races.csv"
+
+[data.results]
+type = "csv"
+path = "data/results.csv"
+
+[data.lap_times]
+type = "csv"
+path = "data/lap_times.csv"
+
+[data.pit_stops]
+type = "csv"
+path = "data/pit_stops.csv"
+
+[data.circuits]
+type = "csv"
+path = "data/circuits.csv"
+
+[data.drivers]
+type = "csv"
+path = "data/drivers.csv"
+
+# (Nothing sensitive here, so secrets.toml can stay empty)
